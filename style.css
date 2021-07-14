@@ -1,95 +1,99 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: auto 0;
-}
-.zone {
-    cursor:pointer;
-    color:#FFF;
-    font-size:2em;
-    border-radius:4px;
-    border:1px solid #bbb;
-    transition: all 0.3s linear;
-}
+* { 
+    margin: 0; 
+    padding: 0; }
 
-.zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-}
 
-/* Navigataion Bar */
+        body { 
+            font: 16px Helvetica, Sans-Serif; 
+            line-height: 24px; 
+            background: url(noise.jpg); }
+        img {
+            transition: transform .7s ease-in-out;
+            border-radius: 30%;
+        }
 
-.main-nav {
-    display: flex;
-    list-style: none;
-    font-size: 0.7em;
-    margin:0;
-}
+        img:hover {
+            transform: rotate(5deg);
+        
+        }
 
-@media only screen and (max-width: 600px) {
-    .main-nav {
-        font-size: 0.5;
-        padding: 0;
-    }
-}
-    
+        .clear { 
+            clear: both; }
+            
+        #page-wrap { 
+            width: 800px; 
+            margin: 40px auto 60px; }
+            
+        #pic { 
+            float: right; 
+            margin: -30px 0 0 0; }
 
-li {
-    padding: 20px;
+        h1 { 
+            margin: 0 0 16px 0; 
+            padding: 0 0 16px 0; 
+            font-size: 42px; 
+            font-weight: bold; 
+            letter-spacing: -2px; 
+            border-bottom: 2px solid rgb(0, 0, 0); }
 
-}
+        h1:hover {
+            color:rgb(60, 141, 179);
+        }
 
-a {
-    color: white;
-    text-decoration: none ;
-}
+        h2 { 
+            font-size: 15px;
+            margin: 0 0 6px 0; 
+            position: relative; }
+        
+        h2 span { 
+            position: absolute; 
+            bottom: 0;
+            right: 0; 
+            font-style: italic; 
+            font-family: Georgia, Serif; 
+            font-size: 16px; 
+            color: rgb(0, 0, 0); 
+            font-weight: normal; }
 
-.push {
-    margin-left: auto;
-}
-.green{
-    background: #F3F9FE; /* Old browsers */
-    background: -moz-linear-gradient(top, #F3F9FE 0%, #9BCBF6 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
-    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
-}
+        p { 
+            margin: 0 0 16px 0; }
 
-.red{
-    background: #C655BE; /* Old browsers */
-    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
-    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
-}
+        a {
+             color: rgb(0, 0, 0);
+            text-decoration: none; 
+            border-bottom: 1px dotted rgb(0, 0, 0); }
 
-/***********************************************************************
- *  Yellow Background
- **********************************************************************/
-.yellow{
-    background: #F3AAAA; /* Old browsers */
-    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
-    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
-}
+        a:hover { 
+            border-bottom-style: solid; 
+            color: black; }
 
-/***********************************************************************
- *  Blue Background
- **********************************************************************/
-.blue{
-    background: #7abcff; /* Old browsers */
-    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
-    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
-}
+        ul {
+             margin: 0 0 32px 17px; }
+
+        #objective {
+             width: 500px; 
+             float: left; }
+
+        #objective p {
+            font-family: Georgia, Serif;
+            font-style: italic; 
+            color: rgb(0, 0, 0); }
+
+        dt { 
+            font-style:oblique;
+            font-weight: bold; 
+            font-size: 18px; 
+            text-align: right; 
+            padding: 0 26px 0 0; 
+            width: 150px; 
+            float: left; 
+            height: 100px; 
+            border-right: 1px solid #999;  }
+
+        dd { 
+            width: 600px; 
+            float: right; }
+        dd.clear {
+            float: none; 
+            margin: 0; 
+            height: 15px; }
